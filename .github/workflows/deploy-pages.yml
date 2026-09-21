@@ -32,6 +32,9 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES: 'true'
+          # Set here rather than in next.config so the value is inlined into the client
+          # bundle too — public/ asset URLs are built in the browser as well as on the server.
+          NEXT_PUBLIC_BASE_PATH: /optionsplay-workspace
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
