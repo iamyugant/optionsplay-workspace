@@ -40,6 +40,13 @@ export const McpPanel: React.FC = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ jsonrpc: '2.0', id: Date.now(), method: 'tools/call', params: { name: tool, arguments: JSON.parse(args || '{}') } }),
       });
+      // The static GitHub Pages build has no Node runtime, so the endpoint 404s there.
+      if (!res.ok) {
+        setResult(
+          `This is the static preview, so the endpoint isn’t running.\n\nClone the repo and run "npm run dev" for the HTTP tools, or "npm run mcp:server" for stdio.`
+        );
+        return;
+      }
       setResult(JSON.stringify(await res.json(), null, 2).slice(0, 4000));
     } catch (e) {
       setResult(`Request failed: ${(e as Error).message}`);
