@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Palette, Sparkles } from 'lucide-react';
-import { cn, focusRing } from '@/lib/utils';
+import { asset, cn, focusRing } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import { SymbolSearch } from '@/components/ui/SymbolSearch';
 import { useDashboardStore } from '@/store/dashboardStore';
@@ -24,7 +24,7 @@ export const AppHeader: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 flex h-14 shrink-0 items-center gap-4 border-b border-line-subtle bg-surface-default px-4">
       <Link href="/" className={cn('flex shrink-0 items-center rounded-sm', focusRing)} aria-label="OptionsPlay home">
-        <Image src="/brand/optionsplay-logo.png" alt="OptionsPlay" width={120} height={75} className="h-8 w-auto" priority />
+        <Image src={asset('/brand/optionsplay-logo.png')} alt="OptionsPlay" width={120} height={75} className="h-8 w-auto" priority />
       </Link>
 
       <nav aria-label="Main" className="hidden items-center gap-1 sm:flex">

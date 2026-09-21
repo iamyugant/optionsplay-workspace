@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, Check, Gauge, Keyboard, Layers, ShieldCheck, Sparkles, Terminal } from 'lucide-react';
-import { cn, focusRing, TOKEN_COUNT } from '@/lib/utils';
+import { asset, cn, focusRing, TOKEN_COUNT } from '@/lib/utils';
 import { Accordion } from '@/components/ui/Accordion';
 import { Badge } from '@/components/ui/Badge';
 import { ProductDemo } from './ProductDemo';
@@ -58,31 +58,31 @@ const STATS = [
 
 const FEATURES = [
   {
-    icon: '/landing/feature-modern.svg',
+    icon: asset('/landing/feature-modern.svg'),
     title: 'New & Modern Experience',
     body: 'A refreshed UI with simplified navigation, cleaner layouts and smoother workflows built for faster decision-making.',
     points: ['Flat, calm surfaces that keep data first', 'One focus style across every control'],
   },
   {
-    icon: '/landing/feature-dashboards.svg',
+    icon: asset('/landing/feature-dashboards.svg'),
     title: 'Advanced Widgets & Tools',
     body: 'A professional-grade suite of options analytics, strategy tools, scanners and market insights, all available as modular widgets.',
     points: ['Technical analysis, screeners, strategies, journal', 'Every widget shares one live data layer'],
   },
   {
-    icon: '/landing/feature-formfactor.svg',
+    icon: asset('/landing/feature-formfactor.svg'),
     title: 'Customizable Dashboards',
     body: 'Drag, drop, resize and rearrange widgets to build a workspace that fits your personal trading style.',
     points: ['Undo, redo, copy and paste while you build', 'Drafts stay private until you publish'],
   },
   {
-    icon: '/landing/feature-analytics.svg',
+    icon: asset('/landing/feature-analytics.svg'),
     title: 'Multi Form Factor Support',
     body: 'A seamless, responsive experience across desktop, widescreen setups and tablets.',
     points: ['Four columns collapse to one, predictably', '44px touch targets on every handheld'],
   },
   {
-    icon: '/landing/feature-modern.svg',
+    icon: asset('/landing/feature-modern.svg'),
     title: 'Professional Analytics Suite',
     body: 'Profit/loss modeling, probability analysis, risk scoring and scenario simulation in a clean, intuitive format.',
     points: ['Payoff, probability and risk on one row', 'Scores you can read at a glance'],
@@ -187,7 +187,7 @@ export const LandingPage: React.FC = () => (
     <header className="sticky top-0 z-40 border-b border-line-subtle bg-surface-default/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-6 px-4">
         <Link href="/" className={cn('flex shrink-0 items-center rounded-sm', focusRing)} aria-label="OptionsPlay home">
-          <Image src="/brand/optionsplay-logo.png" alt="OptionsPlay" width={162} height={101} className="h-9 w-auto" priority />
+          <Image src={asset('/brand/optionsplay-logo.png')} alt="OptionsPlay" width={162} height={101} className="h-9 w-auto" priority />
         </Link>
         <nav aria-label="Sections" className="hidden items-center gap-1 lg:flex">
           {NAV.map((item) => (

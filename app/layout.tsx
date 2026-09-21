@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { asset } from '@/lib/utils';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     'A redesigned, customizable options trading dashboard built on a token-first design system with 50+ components.',
-  icons: { icon: '/brand/optionsplay-logo.png' },
+  icons: { icon: asset('/brand/optionsplay-logo.png') },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -17,6 +17,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+// next/image does not prefix basePath when images are unoptimized, so files in public/
+// get the prefix here. It is an empty string everywhere except the GitHub Pages build.
+export const asset = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${path}`;
+
 export const focusRing =
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-line-focus focus-visible:ring-offset-2 focus-visible:ring-offset-surface-default';
 
