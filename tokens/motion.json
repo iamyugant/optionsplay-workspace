@@ -1,0 +1,26 @@
+{
+  "duration": {
+    "fast": {
+      "value": "120ms",
+      "description": "Hover, press feedback"
+    },
+    "base": {
+      "value": "200ms",
+      "description": "Expand, collapse, toggles"
+    },
+    "slow": {
+      "value": "320ms",
+      "description": "Drawers, modals"
+    }
+  },
+  "easing": {
+    "standard": {
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "description": "Default easing"
+    },
+    "exit": {
+      "value": "cubic-bezier(0.4, 0, 1, 1)",
+      "description": "Elements leaving the screen"
+    }
+  }
+}

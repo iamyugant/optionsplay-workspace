@@ -1,0 +1,368 @@
+{
+  "brand": {
+    "blue": {
+      "50": {
+        "value": "#F4F8FE",
+        "description": "Subtle blue tint background"
+      },
+      "100": {
+        "value": "#E8F0FE",
+        "description": "Selected surface, info badge background"
+      },
+      "200": {
+        "value": "#B3D2F7",
+        "description": "Accent border / soft highlight"
+      },
+      "300": {
+        "value": "#7FB1EC",
+        "description": "Secondary element"
+      },
+      "400": {
+        "value": "#4C8FD6",
+        "description": "Interactive light"
+      },
+      "500": {
+        "value": "#1A6EBF",
+        "description": "Vibrant accent"
+      },
+      "600": {
+        "value": "#00539F",
+        "description": "Primary CTA / interactive default (WCAG AA on white: 7.4:1)"
+      },
+      "700": {
+        "value": "#004585",
+        "description": "Focus / dark accent"
+      },
+      "800": {
+        "value": "#00386B",
+        "description": "Primary hover state"
+      },
+      "900": {
+        "value": "#00284D",
+        "description": "Primary pressed state"
+      }
+    },
+    "green": {
+      "50": {
+        "value": "#F4FAEE",
+        "description": "Brand lime wash (landing backgrounds)"
+      },
+      "100": {
+        "value": "#E6F4D9",
+        "description": "Brand lime surface"
+      },
+      "200": {
+        "value": "#CDE9B3",
+        "description": "Brand lime border"
+      },
+      "300": {
+        "value": "#B1DC8B",
+        "description": "Brand lime light"
+      },
+      "400": {
+        "value": "#96CF66",
+        "description": "Brand lime medium"
+      },
+      "500": {
+        "value": "#7AC043",
+        "description": "OptionsPlay brand lime (pair with Neutral/900 text)"
+      },
+      "600": {
+        "value": "#62A232",
+        "description": "Brand lime hover"
+      },
+      "700": {
+        "value": "#4C8127",
+        "description": "Brand lime pressed / white text (AA 4.6:1)"
+      },
+      "800": {
+        "value": "#38611D",
+        "description": "Brand lime dark text"
+      },
+      "900": {
+        "value": "#264213",
+        "description": "Brand lime deepest"
+      }
+    }
+  },
+  "semantic": {
+    "success": {
+      "50": {
+        "value": "#F2FCF7",
+        "description": "Bullish subtle background"
+      },
+      "100": {
+        "value": "#E3FCEF",
+        "description": "Bullish badge background"
+      },
+      "200": {
+        "value": "#ABF5D1",
+        "description": "Bullish light border"
+      },
+      "300": {
+        "value": "#79F2C0",
+        "description": "Bullish light indicator"
+      },
+      "400": {
+        "value": "#57D9A3",
+        "description": "Bullish medium indicator"
+      },
+      "500": {
+        "value": "#36B37E",
+        "description": "Bullish vibrant"
+      },
+      "600": {
+        "value": "#00875A",
+        "description": "Bullish signal, win rate, positive P&L"
+      },
+      "700": {
+        "value": "#00734D",
+        "description": "Bullish text on light surfaces"
+      },
+      "800": {
+        "value": "#006644",
+        "description": "Bullish badge text"
+      },
+      "900": {
+        "value": "#004D34",
+        "description": "Bullish high-contrast text"
+      }
+    },
+    "red": {
+      "50": {
+        "value": "#FFF5F2",
+        "description": "Bearish subtle background"
+      },
+      "100": {
+        "value": "#FFEBE6",
+        "description": "Bearish badge background"
+      },
+      "200": {
+        "value": "#FFBDAD",
+        "description": "Bearish light border"
+      },
+      "300": {
+        "value": "#FF8F73",
+        "description": "Bearish light indicator"
+      },
+      "400": {
+        "value": "#FF7452",
+        "description": "Bearish medium indicator"
+      },
+      "500": {
+        "value": "#FF5630",
+        "description": "Bearish vibrant"
+      },
+      "600": {
+        "value": "#DE350B",
+        "description": "Bearish signal, risk, negative P&L"
+      },
+      "700": {
+        "value": "#CF2F03",
+        "description": "Bearish text on light surfaces"
+      },
+      "800": {
+        "value": "#BF2600",
+        "description": "Bearish badge text"
+      },
+      "900": {
+        "value": "#8C1B00",
+        "description": "Bearish high-contrast text"
+      }
+    },
+    "amber": {
+      "50": {
+        "value": "#FFFBE6",
+        "description": "Warning subtle background"
+      },
+      "100": {
+        "value": "#FFF0B3",
+        "description": "Warning badge background"
+      },
+      "200": {
+        "value": "#FFE380",
+        "description": "Warning light border"
+      },
+      "300": {
+        "value": "#FFD23F",
+        "description": "Warning light indicator"
+      },
+      "400": {
+        "value": "#FFC400",
+        "description": "Warning medium"
+      },
+      "500": {
+        "value": "#FFAB00",
+        "description": "Warning / Hot indicator"
+      },
+      "600": {
+        "value": "#FF991F",
+        "description": "Warning primary"
+      },
+      "700": {
+        "value": "#B35900",
+        "description": "Warning text on light surfaces"
+      },
+      "800": {
+        "value": "#974F0C",
+        "description": "Warning badge text"
+      },
+      "900": {
+        "value": "#6B3A07",
+        "description": "Warning high-contrast text"
+      }
+    },
+    "neutral": {
+      "0": {
+        "value": "#FFFFFF",
+        "description": "Pure white"
+      },
+      "50": {
+        "value": "#FFFFFF",
+        "description": "Card, modal & primary background (spec: Neutral/50)"
+      },
+      "100": {
+        "value": "#F4F5F7",
+        "description": "Canvas, hover background, table stripe"
+      },
+      "200": {
+        "value": "#EBECF0",
+        "description": "Divider, disabled background"
+      },
+      "300": {
+        "value": "#DFE1E6",
+        "description": "Default border, input stroke"
+      },
+      "400": {
+        "value": "#B3BAC5",
+        "description": "Strong border, placeholder icon"
+      },
+      "500": {
+        "value": "#7A869A",
+        "description": "Disabled text, placeholder"
+      },
+      "600": {
+        "value": "#5E6C84",
+        "description": "Secondary labels, metadata"
+      },
+      "700": {
+        "value": "#42526E",
+        "description": "Body text, table headers"
+      },
+      "800": {
+        "value": "#253858",
+        "description": "Heading text, high-emphasis icons"
+      },
+      "900": {
+        "value": "#172B4D",
+        "description": "Primary text, titles"
+      }
+    }
+  },
+  "alias": {
+    "fg": {
+      "primary": {
+        "value": "{color.semantic.neutral.900}",
+        "description": "Titles, primary content"
+      },
+      "secondary": {
+        "value": "{color.semantic.neutral.700}",
+        "description": "Body copy, table headers"
+      },
+      "tertiary": {
+        "value": "{color.semantic.neutral.600}",
+        "description": "Metadata, helper text"
+      },
+      "disabled": {
+        "value": "{color.semantic.neutral.500}",
+        "description": "Disabled text, placeholders"
+      },
+      "inverse": {
+        "value": "{color.semantic.neutral.50}",
+        "description": "Text on filled actions"
+      },
+      "link": {
+        "value": "{color.brand.blue.600}",
+        "description": "Links, tertiary buttons"
+      },
+      "bullish": {
+        "value": "{color.semantic.success.700}",
+        "description": "Positive change, bullish values"
+      },
+      "bearish": {
+        "value": "{color.semantic.red.700}",
+        "description": "Negative change, bearish values"
+      },
+      "warning": {
+        "value": "{color.semantic.amber.700}",
+        "description": "Warning text"
+      }
+    },
+    "surface": {
+      "canvas": {
+        "value": "{color.semantic.neutral.100}",
+        "description": "App background behind cards"
+      },
+      "default": {
+        "value": "{color.semantic.neutral.50}",
+        "description": "Cards, modals, inputs"
+      },
+      "subtle": {
+        "value": "{color.semantic.neutral.100}",
+        "description": "Hover rows, secondary panels"
+      },
+      "muted": {
+        "value": "{color.semantic.neutral.200}",
+        "description": "Disabled fills, tracks"
+      },
+      "selected": {
+        "value": "{color.brand.blue.50}",
+        "description": "Selected rows / items"
+      },
+      "inverse": {
+        "value": "{color.semantic.neutral.900}",
+        "description": "Toasts, tooltips"
+      },
+      "brand": {
+        "value": "{color.brand.blue.600}",
+        "description": "Global header"
+      }
+    },
+    "line": {
+      "subtle": {
+        "value": "{color.semantic.neutral.200}",
+        "description": "Dividers inside cards"
+      },
+      "default": {
+        "value": "{color.semantic.neutral.300}",
+        "description": "Card & input borders"
+      },
+      "strong": {
+        "value": "{color.semantic.neutral.400}",
+        "description": "Hovered borders"
+      },
+      "focus": {
+        "value": "{color.brand.blue.600}",
+        "description": "Focus rings"
+      }
+    },
+    "action": {
+      "primary": {
+        "value": "{color.brand.blue.600}",
+        "description": "Button/Primary default"
+      },
+      "primary-hover": {
+        "value": "{color.brand.blue.800}",
+        "description": "Button/Primary hover"
+      },
+      "primary-pressed": {
+        "value": "{color.brand.blue.900}",
+        "description": "Button/Primary pressed"
+      },
+      "disabled": {
+        "value": "{color.semantic.neutral.200}",
+        "description": "Button/Primary disabled"
+      }
+    }
+  }
+}
