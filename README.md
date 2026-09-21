@@ -3,6 +3,8 @@
 A production-shaped prototype of the OptionsPlay trading workspace, built on a token-first design
 system. Next.js 14 · TypeScript · Tailwind (token-driven theme) · Zustand · Model Context Protocol.
 
+**Live: [iamyugant.github.io/optionsplay-workspace](https://iamyugant.github.io/optionsplay-workspace/)**
+
 ```bash
 npm install
 npm run dev          # http://localhost:3000
@@ -117,6 +119,10 @@ The `/design-system` page includes a live console for these calls.
 | `npm run mcp:server`   | Stdio MCP server                                 |
 
 ## 6. Deploy
+
+Every push to `main` publishes a static export to GitHub Pages via `.github/workflows/deploy-pages.yml`.
+Pages has no Node runtime, so `/api/mcp` is left out of that build and the MCP console says so —
+run the app locally or deploy to Vercel for the live endpoint.
 
 Vercel builds this with zero configuration — `npm run build` compiles the tokens, runs the token
 guardrail and then builds Next.js, so a hardcoded color fails the deploy rather than shipping.
